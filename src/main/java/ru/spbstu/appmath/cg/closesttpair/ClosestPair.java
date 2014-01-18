@@ -67,7 +67,7 @@ public class ClosestPair {
   }
 
   private static void printHelp() {
-    System.out.println("Usage: closest-pair.jar <mode> <input-file>");
+    System.out.println("Usage: java -jar closest-pair.jar <mode> <input-file>");
     System.out.println(String.format("Supported modes: %s, %s", SIMPLE_MODE, FAST_MODE));
   }
 }
