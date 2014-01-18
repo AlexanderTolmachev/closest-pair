@@ -107,31 +107,6 @@ public class FastClosestPairTaskSolver implements ClosestPairTaskSolver {
       }
     }
 
-//    final Point lastPointInFirstHalf = points.get(indicesSortedByXFirstHalf.get(indicesSortedByXFirstHalf.size() - 1));
-//    final Point firstPointInSecond = points.get(indicesSortedByXSecondHalf.get(0));
-//    final double medianX = (lastPointInFirstHalf.getX() + firstPointInSecond.getX()) / 2.0;
-//    int pointsNumberInLeftHalfWithXEqualToMedianX = 0;
-//    for (int i = indicesSortedByXFirstHalf.size() - 1; i >= 0; i--) {
-//      final double pointX = points.get(indicesSortedByXFirstHalf.get(i)).getX();
-//      if (Double.compare(pointX, medianX) == 0) {
-//        pointsNumberInLeftHalfWithXEqualToMedianX++;
-//      } else {
-//        break;
-//      }
-//    }
-//    int pointsNumberAddedToLeftHalfWithXEqualToMedianX = 0;
-//    for (final int pointIndex : indicesSortedByY) {
-//      final double pointX = points.get(pointIndex).getX();
-//      if (pointX < medianX) {
-//        indicesSortedByYFirstHalf.add(pointIndex);
-//      } else if (Double.compare(pointX, medianX) == 0 && pointsNumberAddedToLeftHalfWithXEqualToMedianX < pointsNumberInLeftHalfWithXEqualToMedianX) {
-//        indicesSortedByYFirstHalf.add(pointIndex);
-//        pointsNumberAddedToLeftHalfWithXEqualToMedianX++;
-//      } else {
-//        indicesSortedByYSecondHalf.add(pointIndex);
-//      }
-//    }
-
     // Solve sub-tasks recursively
     final Pair<Integer> firstHalfSolution = solveRecursively(points, indicesSortedByXFirstHalf, indicesSortedByYFirstHalf);
     final Pair<Integer> secondHalfSolution = solveRecursively(points, indicesSortedByXSecondHalf, indicesSortedByYSecondHalf);
