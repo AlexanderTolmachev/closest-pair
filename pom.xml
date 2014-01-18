@@ -29,7 +29,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>ru.spbstu.appmath.cg.closesttpair.impl.SimpleClosestPairTaskSolver</mainClass>
+              <mainClass>ru.spbstu.appmath.cg.closesttpair.ClosestPair</mainClass>
             </manifest>
           </archive>
         </configuration>
